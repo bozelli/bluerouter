@@ -1,0 +1,29 @@
+{
+    "name": "bluerouter",
+    "version": "0.0.1",
+    "license": "MIT",
+    "description": "Creates routes between several web api applications.",
+    "private": false,
+    "engines": {
+        "node": ">0.10"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/blueori/bluerouter.git"
+    },
+    "scripts": {
+        "start": "node app.js",
+        "test": "grunt"
+    },
+    "dependencies": {
+        "express": "*",
+        "request": "*",
+        "underscore": "*"
+    },
+    "devDependencies": {
+        "chai": "*",
+        "grunt": "*",
+        "grunt-contrib-jshint": "*",
+        "grunt-mocha-cli": "*"
+    }
+}
