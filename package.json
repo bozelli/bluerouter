@@ -12,13 +12,14 @@
         "url": "https://github.com/blueori/bluerouter.git"
     },
     "scripts": {
-        "start": "node app.js",
+        "start": "node server.js",
         "test": "grunt"
     },
     "dependencies": {
         "express": "*",
         "request": "*",
-        "underscore": "*"
+        "underscore": "*",
+        "mongodb": "*"
     },
     "devDependencies": {
         "chai": "*",

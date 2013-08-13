@@ -1,17 +1,12 @@
 {
-	"errorMessage": "route not found",
-	"routes": [
+	"database": {
+		"active": false,
+		"connectionString": "mongodb://localhost/bluerouter"
+	},
+	"routesWithoutDB": [
 		{
 			"param": "v1",
-			"url": "http://cep.blueori.com.br"
-		},
-		{
-			"param": "v2",
-			"url": "http://cep.blueori.com.br"
-		},
-		{
-			"param": "v3",
-			"url": "http://cep.blueori.com.br"
+			"url": "http://jsonip.com"
 		}
 	]
 }

@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         jshint: {
             all: [
                 'gruntfile.js',
-                'app.js',
+                'server.js',
 
                 'package.json',
                 'configuration.json'

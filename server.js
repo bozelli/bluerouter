@@ -5,11 +5,12 @@
 /**
  * Module dependencies.
  */
-var express  = require('express'),
-    http     = require('http'),
-    path     = require('path'),
-    format   = require('util').format,
-    app      = express();
+var express  = require('express');
+var http     = require('http');
+var path     = require('path');
+var format   = require('util').format;
+var conf     = require('./configuration.json');
+var app      = express();
 
 /**
  * Express Configuration.
