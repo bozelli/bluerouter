@@ -6,6 +6,7 @@ var _       = require('underscore');
 var mongodb = require('mongodb');
 var format  = require('util').format;
 var conf    = require('../configuration.json');
+var HandleRoute = require('../infrastructure').handleRoute;
 
 module.exports = function(app){
     app.get('*', function(req, res){
@@ -47,17 +48,6 @@ module.exports = function(app){
         });
     });
 };
-
-function HandleRoute(data, res){
-    var headers = data.headers;
-    var headersObjects = Object.keys(headers);
-
-    for(var i in headersObjects){
-        res.header(headersObjects[i], headers[headersObjects[i]]);
-    }
-
-    res.send(data.body);
-}
 
 function GetRoute(url, callback){
     var urlSplited = url.split('/');
