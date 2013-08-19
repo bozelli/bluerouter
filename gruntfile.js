@@ -18,8 +18,12 @@ module.exports = function(grunt) {
                 require: ['chai'],
                 recursive: true,
                 bail: true,
-                ui: 'tdd',
-                files: 'tests/**/*.test.js'
+                ui: 'tdd'
+            },
+            unit: {
+                options: {
+                    files: 'tests/**/*.test.js'
+                }
             }
         }
     });
@@ -29,5 +33,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-mocha-cli');
 
     // Default task(s).
-    grunt.registerTask('default', ['jshint', 'mochacli']);
+    grunt.registerTask('default', ['jshint', 'mochacli:unit']);
 };
