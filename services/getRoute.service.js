@@ -1,8 +1,9 @@
 /* jslint node: true */
 'use strict';
 
-var mongodb = require('mongodb');
-var conf = require('../configuration.json');
+var mongodb  = require('mongodb');
+var yaml     = require('js-yaml');
+var conf     = require('../configuration.yml');
 
 module.exports = function Routes(callback){
     if(conf.database.active){

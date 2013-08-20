@@ -19,7 +19,7 @@ suite('routes should', function(){
         var res = {
             "header": function(){},
             "send": function(param){
-                assert.equal('Hello',param);
+                assert.equal('Hello', param);
             }
         };
         handleRoute(data, res);

@@ -1,10 +1,10 @@
 /* jslint node: true */
 'use strict';
 
-var _ = require('underscore');
-var format  = require('util').format;
-var request = require('request');
-var handleRoute = require('../infrastructure').handleRoute;
+var _               = require('underscore');
+var format          = require('util').format;
+var request         = require('request');
+var handleRoute     = require('../infrastructure').handleRoute;
 var getRouteService = require('../services').getRoute;
 
 module.exports = function(app){

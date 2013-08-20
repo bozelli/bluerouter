@@ -8,8 +8,9 @@
 var express  = require('express');
 var http     = require('http');
 var path     = require('path');
+var yaml     = require('js-yaml');
 var format   = require('util').format;
-var conf     = require('./configuration.json');
+var conf     = require('./configuration.yml');
 var app      = express();
 
 /**

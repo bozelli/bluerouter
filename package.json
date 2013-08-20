@@ -19,7 +19,8 @@
         "express": "*",
         "request": "*",
         "underscore": "*",
-        "mongodb": "*"
+        "mongodb": "*",
+        "js-yaml": "*"
     },
     "devDependencies": {
         "chai": "*",
