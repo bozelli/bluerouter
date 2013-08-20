@@ -22,7 +22,7 @@ app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(app.router);
 app.use(express.logger('dev'));
-require('./src/routes.controller.js')(app);
+require('./controllers/routes.controller.js')(app);
 
 /**
  * Development only.
