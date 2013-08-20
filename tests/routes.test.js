@@ -23,5 +23,6 @@ suite('routes should', function(){
             }
         };
         handleRoute(data, res);
-  });
+    });
+
 });
