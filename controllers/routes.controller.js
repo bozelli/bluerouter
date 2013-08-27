@@ -67,7 +67,7 @@ function GetRoute(url, callback){
 
         var uri = _.rest(urlSplited, 2);
 
-        callback(null, format('%s/%s', route.url, uri));
+        callback(null, format('%s/%s', route.url, uri.join('/')));
     });
 }
 
